@@ -1,0 +1,65 @@
+Gatito grid exam
+
+    body {
+            margin: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: grid;
+            margin: 0 auto;
+            grid-template-columns: 25% 1fr;
+            grid-template-rows: 100px 1fr;
+            height: 100vh;
+        }
+        header {
+            grid-column: 1 / -1;
+            background-color: orange;
+            text-align: center;
+            line-height: 100px; /* Center text vertically */
+            position: relative; /* Positioning for absolute child */
+        }
+        header h1 {
+            margin: 0; /* Remove default margin */
+            font-family: 'Cursive', cursive;
+            color: white; /* Change text color for better visibility */
+        }
+        aside {
+            
+            background-color: lightblue;
+            padding:15px;
+            overflow-y: auto; /* Enable scrolling if content overflows */
+        }
+        aside a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: darkblue;
+        }
+        main {
+            background-color: pink;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+        figure {
+            background-color: white;
+            padding: 10px;
+            border: 1px solid #ccc;
+            transition: transform 0.1s;
+            text-align: center;
+        }
+        figure:hover {
+            transform: scale(2.05);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .ampliar-imagen {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    object-fit: cover; /* Cubre el área del marco sin distorsionar la imagen */
+} 
+
+  
